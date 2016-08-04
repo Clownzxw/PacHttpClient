@@ -13,10 +13,10 @@ PacHttpClientConfig config =
        .timeUnit( ? )
        .blockingQueue( ? );
 ```
-或直接使用默认配置：<br> 
+或直接使用默认配置：
 ```Java
-PacHttpClientConfig config =<br> 
-       new PacHttpClientConfig(getApplicationContext())；<br>
+PacHttpClientConfig config = 
+       new PacHttpClientConfig(getApplicationContext())；
 ```
 2、初始化<br> 
 ```Java
@@ -24,7 +24,7 @@ PacHttpClient.init(config);
 ```
 3、发起请求<br> 
 ```Java
-/*HttpRequest request =*/ PacHttpClient.invokeRequest(this/*activity*/, "apiKey", params, new RequestCallback() {<br> 
+/*HttpRequest request =*/ PacHttpClient.invokeRequest(this/*activity*/, "apiKey", params, new RequestCallback() { 
    @Override
    public void onSuccess(String content) {
                 
